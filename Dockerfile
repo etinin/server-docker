@@ -45,7 +45,7 @@ RUN \
     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" || \
     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ; \
   done && \
-  echo "**** installing node ****" && \
+  echo "**** installing node **** NOT RLY" 
  # curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz" && \
  # curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" && \
  # gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc && \
