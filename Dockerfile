@@ -1,4 +1,4 @@
-FROM node/latest-alpine
+FROM node:latest-alpine
 
 # version labels
 ARG BUILD_DATE
