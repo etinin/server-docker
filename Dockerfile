@@ -94,27 +94,4 @@ USER root
 
 # ports and volumes
 EXPOSE 80 443
-VOLUME /app/database /app/recipes /config" && \
-  echo "**** cleanup ****" && \
-  apk del .build-deps-ferdi && \
-  rm -rf \
-   ${RM_DIRS} \
-   /SHASUMS256.txt \
-   /tmp/* \
-   /var/cache/apk/* \
-   /usr/share/man/* \
-   /usr/share/doc \
-   /root/.node-gyp \
-   /root/.config \
-   /usr/lib/node_modules/npm/man \
-   /usr/lib/node_modules/npm/doc \
-   /usr/lib/node_modules/npm/html \
-   /usr/lib/node_modules/npm/scripts
-  
-COPY root/ /
-
-USER root
-
-# ports and volumes
-EXPOSE 80 443
 VOLUME /app/database /app/recipes /config
