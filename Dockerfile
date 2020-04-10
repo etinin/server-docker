@@ -68,7 +68,7 @@ RUN \
   echo "**** installing npm ****" && \
   npm config set unsafe-perm true && \
   npm install -g npm@latest && \
-  find /usr/lib/node_modules/npm -name test -o -name .bin -type d | xargs rm -rf && \
+  find /usr/local/lib/node_modules/npm -name test -o -name .bin -type d | xargs rm -rf && \
   echo "**** install ferdi server ****" && \
   mkdir -p /ferdi && \
   curl -o /ferdi/ferdi.tar.gz -L "https://github.com/etinin/server/archive/master.tar.gz" && \
